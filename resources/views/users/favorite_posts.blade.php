@@ -10,6 +10,9 @@
                     <div>
                         <p class="mb-0">{!! nl2br(e($favorite->content)) !!}</p>
                     </div>
+                    <div>
+                        @include('favorite.favorite_btn', ['micropost' => $favorite])
+                    </div> 
                  </div>
             </li>
         @endforeach
